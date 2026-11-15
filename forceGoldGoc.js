@@ -645,5 +645,8 @@ if (ua.includes("Locket")) {
         ])
     });
 }
-
+// Giả lập quyền tải AR Filter
+obj.entries.ar_filters_enabled = "true";
+obj.entries.ar_filters_download_enabled = "true";
+obj.entries.camera_filter_ar_enabled = "true";
 $done({ body: JSON.stringify(obj) });
