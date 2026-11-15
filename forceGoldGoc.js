@@ -14,6 +14,7 @@ if (ua.includes("Locket")) {
     // ============================================================
     Object.assign(obj.entries, {
         feature_gates: JSON.stringify({
+            camera_filters: "enabled",
             app_icon_picker: "enabled",
             camera_roll: "enabled",
             camera_theme: "enabled",
@@ -134,6 +135,9 @@ if (ua.includes("Locket")) {
             show_filter_button: true,
             sheet_enabled: true,
             open_sheet_immediately: true,
+            is_filter_enabled: true,
+            filter_button_visible: true,
+            camera_filters_enabled: true,
             sheet_filters: [
                 { title: { en: "Goofy" }, filter_ids: ["okay_wig", "influencer", "looks_maxxing", "toothless", "bye_brows"] },
                 { title: { en: "Looks" }, filter_ids: ["bowling_ball", "blonde_bleached", "beard", "bob_cut", "buns", "tatted", "mohawk", "braces", "bye_brows"] },
